@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>閲覧制限ページ</title>
+</head>
+<body>
+
+<h2>パスワードを入力してください</h2>
+
+<input type="password" id="pw">
+<button onclick="check()">送信</button>
+
+<script>
+function check(){
+  var pass = "1234";
+  if(document.getElementById("pw").value === pass){
+    location.href = "secret.html";
+  }else{
+    alert("パスワードが違います");
+  }
+}
+</script>
+
+</body>
+</html>
